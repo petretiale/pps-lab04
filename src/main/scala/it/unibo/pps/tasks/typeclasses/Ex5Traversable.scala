@@ -47,8 +47,12 @@ object Ex5Traversable:
 
   val seq = Cons(10, Cons(20, Nil()))
   val opt = Optional.Just("Hello")
+  val emptyOpt = Optional.None[Int]()
 
+  println("--- Logging Sequence ---")
   logAll(seq)
+
+  println("\n--- Logging Optional ---")
   logAll(opt)
     
 
